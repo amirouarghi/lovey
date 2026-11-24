@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Ilhem — A Secret Garden</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="dedication" id="topLabel">a gift for ilhem</div>
+  <canvas id="stage"></canvas>
+  <div class="vignette"></div>
+
+  <!-- Surprise Opening Screen -->
+  <div class="intro-overlay" id="introOverlay">
+    <div class="gift-card">
+      <div class="ascii-emblem">    *  .   _   .  *
+  .   .' * ' .   .
+     (   <3   )
+      '.    .'
+        '\/'</div>
+      <div class="gift-tag">made specially for you</div>
+      <h1 class="gift-title">For Ilhem</h1>
+      <p class="gift-sub">
+        Inside the letters of your name hides a little purple garden,
+        blooming flowers, and a few sleepy kitties waiting to say hello.
+      </p>
+      <button class="btn-open" id="btnOpenGift" type="button">
+        <span>*</span>
+        <span>Open Your Gift</span>
+        <span>*</span>
+      </button>
+      <div class="intro-hint">best experienced with sound on · tap cats &amp; flowers later</div>
+    </div>
+  </div>
+
+  <!-- Love Note Modal -->
+  <div class="note-modal" id="noteModal" aria-hidden="true">
+    <div class="note-card">
+      <div class="note-heading" id="noteTitle">For Dearest Ilhem</div>
+      <div class="note-body" id="noteBody"></div>
+      <div class="note-sign" id="noteSign"></div>
+      <button class="note-close" id="btnCloseNote" type="button">Back to the Garden</button>
+    </div>
+  </div>
+
+  <!-- Bottom HUD Controls -->
+  <div class="hud hidden" id="hud" aria-label="Animation Controls">
+    <button id="btnPlayPause" type="button">Pause</button>
+    <button id="btnReplay" type="button">Replay</button>
+    <button id="btnSound" type="button" class="active">Sound: On</button>
+    <div class="stage-pills">
+      <div class="stage-pill current" data-time="0.5" title="Jump to Name">
+        <span class="dot"></span><span class="label">ilhem</span>
+      </div>
+      <div class="stage-pill" data-time="5.5" title="Jump to Leaf Zoom">
+        <span class="dot"></span><span class="label">leaf</span>
+      </div>
+      <div class="stage-pill" data-time="10.4" title="Jump to Bloom">
+        <span class="dot"></span><span class="label">bloom</span>
+      </div>
+      <div class="stage-pill" data-time="16.8" title="Jump to Bouquet &amp; Kitties">
+        <span class="dot"></span><span class="label">garden</span>
+      </div>
+    </div>
+    <button id="btnNote" type="button">Note &lt;3</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
